@@ -45,7 +45,7 @@ class Jdk12Test {
         Path filePath3 = Files.createTempFile("file3", ".txt");
         Path filePath4 = Files.createTempFile("file4", ".txt");
         Files.writeString(filePath3, "Java 12");
-        Files.writeString(filePath4, "Java 12 DIFFERNCE_HERE!!!");
+        Files.writeString(filePath4, "Java 12 DIFFERENCE_HERE!!!");
 
         long mismatch = Files.mismatch(filePath3, filePath4);
         assertThat(mismatch).isEqualTo(7);

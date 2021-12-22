@@ -19,7 +19,7 @@ final class Jdk16Test {
     }
 
     @Test
-    public void StreamToList() {
+    public void streamToList() {
         List<String> integersAsString = List.of("1", "2", "3");
         List<Integer> ints = integersAsString.stream().map(Integer::parseInt).toList();
 

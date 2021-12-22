@@ -48,7 +48,7 @@ class Jdk9Test {
     }
 
     @Test
-    void a() {
+    void optionalStream() {
         List<String> filteredList = List.of(Optional.of("a"), Optional.of("b"))
                 .stream()
                 .flatMap(Optional::stream)
@@ -71,5 +71,7 @@ class Jdk9Test {
                 .thenApply(HttpResponse::body)
                 .thenAccept(System.out::println);
     }
+
+    //take a look to Jdk9InterfaceWithPrivateMethods
 
 }

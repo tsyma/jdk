@@ -2,10 +2,6 @@ package net.lafox.jdk;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
 
 final class Jdk15Test extends Java15SealedClass {
@@ -14,7 +10,7 @@ final class Jdk15Test extends Java15SealedClass {
     @Test
     public void records() {
         Java15PersonClass a = new Java15PersonClass("a", 10);
-        Java15PersonReccord b = new Java15PersonReccord("b", 10);
+        Java15PersonRecord b = new Java15PersonRecord("b", 10);
 
         assertThat(a.getAge()).isEqualTo(b.age());
     }
