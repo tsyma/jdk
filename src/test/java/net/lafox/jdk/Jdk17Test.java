@@ -16,6 +16,8 @@ final class Jdk17Test {
     // Six-Month Feature-Release Model
     // LTS Model 2 years. Next LTS JDK-21 in September 2023
 
+
+    //todo NPE message, var
 }
 
 
